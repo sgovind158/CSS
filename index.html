@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html{
+            font-size: 62.5%;
+        }
+
+        /* 1rem = 10px */
+        .center-div{
+            width: 100vw;
+            height: 100vh;
+            background-color: #000;
+            display: grid;
+            place-items: center;
+
+        }
+
+        .insta-logo{
+            width: 15rem;
+            height: 15rem;
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+            border-radius: 3rem;
+
+            display: grid;
+            place-items: center;
+            position: relative;
+           
+        }
+
+        .squre-layer{
+            width: 11rem;
+            height: 11rem;
+            border: 1rem solid white;
+          
+            background-color: transparent;
+            border-radius: 3rem;
+            display: grid;
+            place-items: center;
+            position: relative;
+           
+
+        }
+
+        .squre-layer::before{
+            content: "";
+            width: 3.8rem;
+            height: 3.8rem;
+            background-color: transparent;
+            border: 1rem solid white;
+           
+            border-radius: 50%;
+            position: absolute;
+            
+        }
+
+        .squre-layer::after{
+            content: "";
+            width: 1rem;
+            height: 1rem;
+            border: .15rem solid white;
+            background-color: white;
+            border-radius: 50%;
+
+            position: absolute;
+            top: 1rem;
+            right: .8rem;
+            
+        }
+    </style>
+</head>
+<body>
+<h3> <a href="index.html">InstaLogo</a></h3>
+    <div class="center-div">
+       
+        <div class="insta-logo">
+            <div class="squre-layer"></div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
